@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+using BasicWebServer.Server.Enums;
 
 namespace BasicWebServer.Server.HTTP.Response
 {
