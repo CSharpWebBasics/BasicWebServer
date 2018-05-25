@@ -115,11 +115,11 @@ namespace BasicWebServer.Server.HTTP
 
         private void ParseFormData(string formDataLine)
         {
-            if (this.RequestMethod != HttpRequestMethod.GET)
+            if (this.RequestMethod != HttpRequestMethod.POST)
             {
                 return;
             }
-            this.ParseQuery(formDataLine, this.QueryParameters);
+            this.ParseQuery(formDataLine, this.FormData);
         }
 
         private void ParseQuery(string query, IDictionary<string, string> dictionary)
